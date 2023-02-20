@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements</title>
+    <script defer src="components/JamSTLTags.js"></script>
+  </head>
+
+  <body>
+    <create-var varName="x" varValue="4"></create-var>
+    <for-loop varName="i" start="0" end="3">
+      <if-statement condition="{{i}} % 2 === 0">
+        <p-paragraph>{{i}} is even <br></p-paragraph>
+        <else-statement>
+          <p-paragraph>{{i}} is not even <br></p-paragraph>
+        </else-statement>
+      </if-statement>
+    </for-loop> 
+  </body>
+</html>
